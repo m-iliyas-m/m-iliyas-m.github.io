@@ -47,7 +47,7 @@ tbody td.positive {
 }
 
 tbody td.negative {
-    background-color: #721c24;
+    background-color: #ff0019;
     color: #f8d7da;
 }
 
@@ -56,7 +56,7 @@ tbody td.upward {
 }
 
 tbody td.downward {
-    color: #dc3545;
+    color: #ff0019;
 }
 
 @media (max-width: 600px) {
@@ -97,7 +97,7 @@ tbody td.downward {
     }
 
     tbody td.negative {
-        background-color: #dc3545;
+        background-color: #ff0019;
         color: #fff;
     }
 }
