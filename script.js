@@ -28,7 +28,7 @@ function getRandomChange(drift, volatility) {
 // Function to update prices
 function updatePrices(data) {
     const drift = 0.0001; // Adjust the drift value as needed (small percentage)
-    const volatility = 0.01; // Adjust the volatility value as needed (small percentage)
+    const volatility = 0.00001; // Adjust the volatility value as needed (small percentage)
 
     return data.map((row) => {
         const randomChangePercentage = getRandomChange(drift, volatility);
@@ -103,7 +103,7 @@ async function init() {
     setInterval(() => {
         const updatedData = updatePrices(data);
         createTable(updatedData);
-    }, 2000);  // Update every 5 seconds
+    }, 1000);  // Update every 5 seconds
 }
 
 document.addEventListener("DOMContentLoaded", init);
