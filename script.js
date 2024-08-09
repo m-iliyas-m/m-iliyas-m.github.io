@@ -103,7 +103,7 @@ async function init() {
     setInterval(() => {
         const updatedData = updatePrices(data);
         createTable(updatedData);
-    }, 5000);  // Update every 5 seconds
+    }, 2000);  // Update every 5 seconds
 }
 
 document.addEventListener("DOMContentLoaded", init);
